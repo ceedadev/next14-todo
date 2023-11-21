@@ -2,9 +2,15 @@
 
 import { db } from "@/db/conn";
 import { task } from "@/db/schema";
+import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
-export default async function addTaskAction(title: string) {
+export async function addTaskAction(title: string) {
   await db.insert(task).values({ title });
+  revalidatePath("/");
+}
+
+export async function deleteTaskAction(id: number) {
+  await db.delete(task).where(eq(task.id, id));
   revalidatePath("/");
 }
