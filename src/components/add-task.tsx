@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import addTaskAction from "@/app/_actions/task";
+import { addTaskAction } from "@/app/_actions/task";
 
 export default function AddTask() {
   const [title, setTitle] = React.useState("");
