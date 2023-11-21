@@ -1,6 +1,5 @@
 import { db } from "@/db/conn";
 import AddTask from "@/components/add-task";
-import DeleteTaskButton from "@/components/delete-task";
 import TaskItem from "@/components/task-item";
 
 export default async function Home() {
