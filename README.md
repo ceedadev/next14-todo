@@ -16,8 +16,8 @@ To get started with this project, you'll need to have Node.js installed on your 
 Clone the Repository
 
 ```bash
-git clone <https://github.com/ceedadev/next14-todo.git>
-cd todo-app-react-nextjs
+git clone https://github.com/ceedadev/next14-todo.git
+cd next14-todo
 ```
 
 Install Dependencies
@@ -40,6 +40,12 @@ Visit <http://localhost:3000> in your browser to see the application.
 - **Next.js 14**: Provides the framework for React with additional features like file-based routing.
 - **TailwindCSS**: Used for styling the application with a utility-first CSS framework.
 - **DrizzleORM**: Manages database interactions with a simple, effective ORM for Node.js.
+
+## To do
+
+- [x] CRUD Function
+- [ ] Proper Styling
+- [ ] Timestamp (Created At, Edited At)
 
 ## Contributions
 
