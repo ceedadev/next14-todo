@@ -14,3 +14,8 @@ export async function deleteTaskAction(id: number) {
   await db.delete(task).where(eq(task.id, id));
   revalidatePath("/");
 }
+
+export async function updateTaskAction(id: number, title: string) {
+  await db.update(task).set({ title }).where(eq(task.id, id));
+  revalidatePath("/");
+}
