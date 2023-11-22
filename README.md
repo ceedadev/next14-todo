@@ -44,8 +44,8 @@ Visit <http://localhost:3000> in your browser to see the application.
 ## To do
 
 - [x] CRUD Function
-- [ ] Proper Styling
-- [ ] Timestamp (Created At, Edited At)
+- [x] Proper Styling
+- [x] Timestamp (Created At, Edited At)
 
 ## Contributions
 
